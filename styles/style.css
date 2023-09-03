@@ -12,19 +12,20 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--heading-font-family);
   font-weight: bold;
   color: black;
 }
 
 h1 {
-  font-size: 85px;
+  font-size: 96px;
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 64px;
 }
 
 h3 {
@@ -32,11 +33,31 @@ h3 {
   opacity: 0.7;
 }
 
+h4{
+  font-size: 48px;
+}
+
 p {
   font-weight: normal;
   line-height: 30px;
   font-size: 16px;
   color: rgb(69, 68, 68);
+}
+
+a{
+  text-decoration: none;
+}
+
+footer{
+  margin: 60px 0;
+  text-align: center;
+}
+
+.navbar-brand {
+  margin-right: 20px;
+  margin-left: 50px;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
 }
 
 .nav-item{
@@ -54,13 +75,13 @@ p {
 }
 
 .active{
-  color: #6c63ff !important; 
+  color: var(--primary-color) !important; 
 }
 
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 120px 20px;
+  padding: 120px 0px 80px 0; 
 }
 
 .d-flex {
@@ -107,18 +128,6 @@ p {
   opacity: 0.9;
 }
 
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-}
-
 .button {
   background-color: var(--primary-color);
   border-radius: 5px;
@@ -132,14 +141,44 @@ p {
   text-align: center;
 }
 
-.navbar-brand {
-  margin-right: 20px;
-  margin-left: 50px;
-  font-family: var(--heading-font-family);
-  font-weight: bold;
+footer .contact-box{
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
 }
 
-@media (max-width: 580px) {
+footer .contact-box p{
+  margin: 0;
+  text-align: start;
+}
+
+footer .email-link {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--primary-color);
+}
+
+footer .socials-media a{
+  margin: 0 20px;
+  border-radius: 50px;
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 18px;
+}
+
+footer .socials-media a:hover{
+  color: white;
+  background: var(--primary-color);
+  transition: aal 100ms ease-in-out;
+}
+
+@media (max-width: 770px) {
   h1 {
     font-size: 40px;
   }
@@ -148,10 +187,15 @@ p {
     text-align: center;
   }
 
+  h4{
+    font-size: 20px;
+  }
+
   .button {
     display: block;
     text-align: center;
     margin: 20px;
+    font-size: 15px;
   }
 
   .d-flex a {
@@ -173,4 +217,8 @@ p {
     padding: 0;
     margin-top: 80px;
   }
+
+  footer .contact-box{
+  padding: 30px 50px;
+}
 }
