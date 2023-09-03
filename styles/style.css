@@ -39,10 +39,28 @@ p {
   color: rgb(69, 68, 68);
 }
 
-.hero{
+.nav-item{
+  padding: 0 10px;
+}
+
+.nav-link{
+  color: rgb(95, 92, 92);
+}
+
+.nav-link:hover {
+  color: #7d77fb;
+  font-weight: bold;
+  transition: all 100px ease-in-out;
+}
+
+.active{
+  color: #6c63ff !important; 
+}
+
+.hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 70px 20px;
+  padding: 120px 20px;
 }
 
 .d-flex {
@@ -71,7 +89,7 @@ p {
 }
 
 .content-container{
-  padding: 120px 20px;
+  padding: 140px 20px;
 }
 
 .content-container h1{
