@@ -44,6 +44,10 @@ p {
   color: rgb(69, 68, 68);
 }
 
+.check{
+  text-align: center;
+}
+
 a{
   text-decoration: none;
 }
@@ -136,9 +140,28 @@ footer{
   background-color: var(--primary-color);
   border-radius: 5px;
   padding: 15px 30px;
-  margin: 20px;
+  line-height: 27px;
   color: white;
-  text-decoration: none;
+  font-size: 18px;
+}
+
+.btn:hover{
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.button-outline{
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 15px 30px;
+  line-height: 27px;
+  font-size: 18px;
+}
+
+.button-outline:hover{
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .contact{
